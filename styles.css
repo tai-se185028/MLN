@@ -104,10 +104,13 @@ h1 { font-size: clamp(32px,5vw,52px); line-height: 1.08; letter-spacing: -.035em
 .legend { display:flex; flex-wrap:wrap; gap:12px; font-size:11px; color:var(--muted); margin:18px 0; }
 .legend i { width:9px; height:9px; display:inline-block; border-radius:3px; margin-right:4px; background:#e8edf5; }
 .legend .answered { background:var(--blue); }
+.legend .partial { background:var(--blue-soft); border:1px dashed var(--blue); }
 .legend .flagged { background:var(--amber); }
 .question-grid { display:grid; grid-template-columns:repeat(5,1fr); gap:8px; }
 .q-num { aspect-ratio:1; padding:0; border:0; border-radius:10px; color:var(--muted); background:#eef2f7; font-size:12px; font-weight:700; position:relative; }
 .q-num.answered { color:#fff; background:var(--blue); }
+.q-num.partial { border:2px dashed var(--blue); color:var(--blue); background:var(--blue-soft); }
+.q-num.partial::after { content:"½"; font-size:9px; position:absolute; right:2px; top:1px; font-weight:800; }
 .q-num.flagged::after { content:""; width:7px; height:7px; background:var(--amber); border:2px solid var(--surface); border-radius:50%; position:absolute; right:-2px; top:-2px; }
 .q-num.current { outline:3px solid rgba(37,99,235,.24); }
 .quiz-main { grid-column:2; min-width:0; padding-bottom:110px; }
@@ -173,6 +176,38 @@ body.dark .topbar, body.dark .quiz-top, body.dark .quiz-nav { background:rgba(21
 body.dark .btn-ghost, body.dark .q-num, body.dark .option-letter { background:#202c42; }
 body.dark .progress { background:#2b374b; }
 body.dark .choice-tile span { color:var(--muted); }
+
+/* Multi-part & Variant Question Styles */
+.question-part-badge { display: flex; align-items: center; gap: 8px; margin-bottom: 14px; }
+.badge-part { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: .06em; padding: 5px 10px; border-radius: 8px; color: var(--blue); background: var(--blue-soft); }
+.badge-part.variant-accent { color: #854d0e; background: #fef9c3; }
+body.dark .badge-part.variant-accent { color: #fef08a; background: #422006; }
+
+.variant-prompt-card { margin-top: 24px; padding: 18px 20px; background: #fbfcfe; border: 2px dashed #cbd5e1; border-radius: 18px; display: flex; align-items: center; gap: 16px; color: var(--muted); }
+.variant-prompt-icon { width: 42px; height: 42px; border-radius: 12px; background: #fef9c3; color: #a16207; display: grid; place-items: center; font-size: 20px; flex-shrink: 0; }
+.variant-prompt-content strong { display: block; color: var(--ink); font-size: 14px; margin-bottom: 3px; }
+.variant-prompt-content p { margin: 0; font-size: 13px; line-height: 1.5; }
+
+body.dark .variant-prompt-card { background: #131c2e; border-color: #2b3952; }
+body.dark .variant-prompt-icon { background: #422006; color: #fde047; }
+
+.variant-card { margin-top: 28px; padding: 24px 20px; background: #f8fbff; border: 2px solid #bcd7ff; border-radius: 20px; box-shadow: 0 8px 24px rgba(37,99,235,.07); animation: slideDown .25s ease; }
+@keyframes slideDown { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: translateY(0); } }
+
+body.dark .variant-card { background: #111a2c; border-color: #254479; box-shadow: 0 8px 24px rgba(0,0,0,.25); }
+
+.variant-card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+.variant-part-tag { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.variant-indicator { font-size: 12px; font-weight: 700; color: var(--blue); }
+.variant-question-title { font-size: clamp(16px,2vw,20px); line-height: 1.55; font-weight: 700; margin: 0 0 18px; color: var(--ink); white-space: pre-line; }
+
+.feedback-part { margin-top: 10px; line-height: 1.5; }
+.fb-tag { display: inline-block; font-weight: 700; padding: 3px 8px; border-radius: 6px; font-size: 12px; }
+.fb-tag.fb-good { color: #065f46; background: #d1fae5; }
+.fb-tag.fb-bad { color: #991b1b; background: #fee2e2; }
+body.dark .fb-tag.fb-good { color: #6ee7b7; background: #064e3b; }
+body.dark .fb-tag.fb-bad { color: #fca5a5; background: #7f1d1d; }
+.fb-ans { margin-top: 4px; font-size: 13px; }
 
 @media (max-width:900px) {
   .exam-grid { grid-template-columns:repeat(2,1fr); }

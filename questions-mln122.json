@@ -19,6 +19,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -29,18 +30,23 @@
             "Một giai đoạn",
             "Hai giai đoạn",
             "Ba giai đoạn",
-            "Bốn giai đoạn",
-            "Hiệp tác đơn giản, lao động thủ công, lao động phức tạp",
-            "Hiệp tác đơn giản, công trường thủ công, công nghiệp hóa",
-            "Hiệp tác đơn giản, sản xuất thủ công, sản xuất hiện đại",
-            "Hiệp tác đơn giản, công trường thủ công, đại công nghiệp)"
+            "Bốn giai đoạn"
           ],
-          "correctAnswer": null,
-          "correctAnswers": [
-            2,
-            7
-          ],
-          "explanation": "(Kiểu hỏi khác: Khi nghiên cứu về cách mạng công nghiệp lần thứ nhất, C. Mác đã khái quát tính quy luật của các mạng công nghiệp qua các giai đoạn phát triển đó là:",
+          "correctAnswer": 2,
+          "correctAnswers": null,
+          "variant": {
+            "title": "Kiểu hỏi khác",
+            "question": "Khi nghiên cứu về cách mạng công nghiệp lần thứ nhất, C. Mác đã khái quát tính quy luật của các mạng công nghiệp qua các giai đoạn phát triển đó là:",
+            "options": [
+              "Hiệp tác đơn giản, lao động thủ công, lao động phức tạp",
+              "Hiệp tác đơn giản, công trường thủ công, công nghiệp hóa",
+              "Hiệp tác đơn giản, sản xuất thủ công, sản xuất hiện đại",
+              "Hiệp tác đơn giản, công trường thủ công, đại công nghiệp"
+            ],
+            "correctAnswer": 3,
+            "correctAnswers": null
+          },
+          "explanation": null,
           "needsReview": false
         },
         {
@@ -54,6 +60,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -68,6 +75,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -82,6 +90,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -95,6 +104,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -109,6 +119,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -123,6 +134,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -137,6 +149,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -151,6 +164,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -165,6 +179,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -178,6 +193,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -191,6 +207,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -205,6 +222,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -218,6 +236,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -228,18 +247,23 @@
             "Từ nửa cuối thế kỷ XIX đến đầu thế kỷ XX",
             "Từ nửa đầu thế kỷ XIX đến cuối thế kỷ XIX",
             "Từ nửa đầu thế kỷ XX đề nửa cuối thế kỷ XX",
-            "Từ nửa cuối thế kỷ XIX đến nửa cuối thế kỷ XX",
-            "Từ giữa thế kỷ XV đến giữa thế kỷ XIX",
-            "Từ giữa thế kỷ XVI đến giữa thế kỷ XVII",
-            "Từ giữa thế kỷ XVIII đến giữa thế kỷ XIX",
-            "Từ giữa thế kỷ XIX đến giữa thế kỷ XX)"
+            "Từ nửa cuối thế kỷ XIX đến nửa cuối thế kỷ XX"
           ],
-          "correctAnswer": null,
-          "correctAnswers": [
-            0,
-            7
-          ],
-          "explanation": "(Kiểu hỏi khác: Cách mạng công nghiệp lần thứ hai diễn ra trong thời gian nào?",
+          "correctAnswer": 0,
+          "correctAnswers": null,
+          "variant": {
+            "title": "Kiểu hỏi khác",
+            "question": "Cách mạng công nghiệp lần thứ hai diễn ra trong thời gian nào?",
+            "options": [
+              "Từ giữa thế kỷ XV đến giữa thế kỷ XIX",
+              "Từ giữa thế kỷ XVI đến giữa thế kỷ XVII",
+              "Từ giữa thế kỷ XVIII đến giữa thế kỷ XIX",
+              "Từ giữa thế kỷ XIX đến giữa thế kỷ XX"
+            ],
+            "correctAnswer": 3,
+            "correctAnswers": null
+          },
+          "explanation": null,
           "needsReview": false
         },
         {
@@ -253,6 +277,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -267,6 +292,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -281,6 +307,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -295,6 +322,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -309,6 +337,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -323,6 +352,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -337,6 +367,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -350,6 +381,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -364,6 +396,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -374,18 +407,23 @@
             "Do chủ nghĩa tư bản sinh ra",
             "Có cùng bản chất với kinh tế hàng hóa",
             "Tồn tại chủ quan trong thời kỳ quá độ lên chủ nghĩa xã hội",
-            "Là sản phẩm riêng của chủ nghĩa tư bản",
-            "Phân công lao động xã hội và sự tách biệt về kinh tế giữa các chủ thể sản xuất",
-            "Phân công lao động trong các gia đình xuất hiện",
-            "Chế độ tư hữu về tư liệu sản xuất",
-            "Nhu cầu trao đổi trong xã hội tăng lên"
+            "Là sản phẩm riêng của chủ nghĩa tư bản"
           ],
-          "correctAnswer": null,
-          "correctAnswers": [
-            1,
-            4
-          ],
-          "explanation": "(Kiểu hỏi khác: Về vị trí lịch sử, kinh tế thị trường có đặc điểm gì?)\nĐiều kiện để ra đời và tồn tại của sản xuất hàng hóa là",
+          "correctAnswer": 1,
+          "correctAnswers": null,
+          "variant": {
+            "title": "Kiểu hỏi khác",
+            "question": "Về vị trí lịch sử, kinh tế thị trường có đặc điểm gì?\nĐiều kiện để ra đời và tồn tại của sản xuất hàng hóa là",
+            "options": [
+              "Phân công lao động xã hội và sự tách biệt về kinh tế giữa các chủ thể sản xuất",
+              "Phân công lao động trong các gia đình xuất hiện",
+              "Chế độ tư hữu về tư liệu sản xuất",
+              "Nhu cầu trao đổi trong xã hội tăng lên"
+            ],
+            "correctAnswer": 0,
+            "correctAnswers": null
+          },
+          "explanation": null,
           "needsReview": false
         },
         {
@@ -399,6 +437,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -413,6 +452,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -427,6 +467,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -441,6 +482,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -454,6 +496,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -468,6 +511,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": "(1. Tích tụ và tập trung tư bản\n2. Phân công lao động xã hội\n3. Mâu thuẫn giai cấp\n4. Xu hướng quốc tế hóa và cạnh tranh quốc tế)",
           "needsReview": false
         },
@@ -481,6 +525,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -495,6 +540,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -509,6 +555,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -523,6 +570,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -537,6 +585,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -550,6 +599,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -564,6 +614,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -582,6 +633,7 @@
             1,
             2
           ],
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -596,6 +648,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -609,6 +662,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -623,7 +677,8 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
-          "explanation": "(Kiểu hỏi khác: Xét về bản chất, lợi ích kinh tế được hiểu như thế nào?)",
+          "variant": null,
+          "explanation": null,
           "needsReview": false
         },
         {
@@ -637,6 +692,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -651,6 +707,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -661,18 +718,23 @@
             "Cướp bóc thuộc địa",
             "Khai thác lao động làm thuê",
             "Làm phá sản những người sản xuất nhỏ trong nông nghiệp",
-            "Tất cả phương án trên",
-            "Cướp bóc thuộc địa",
-            "Khai thác lao động làm thuê",
-            "Làm phá sản những người sản xuất nhỏ trong nông nghiệp",
-            "Đi vay nhà nước)"
+            "Tất cả phương án trên"
           ],
-          "correctAnswer": null,
-          "correctAnswers": [
-            3,
-            7
-          ],
-          "explanation": "(Kiểu hỏi khác: Nguồn gốc nào không đúng với nguồn vốn công nghiệp hóa ở các nước tư bàn cổ điển?",
+          "correctAnswer": 3,
+          "correctAnswers": null,
+          "variant": {
+            "title": "Kiểu hỏi khác",
+            "question": "Nguồn gốc nào không đúng với nguồn vốn công nghiệp hóa ở các nước tư bàn cổ điển?",
+            "options": [
+              "Cướp bóc thuộc địa",
+              "Khai thác lao động làm thuê",
+              "Làm phá sản những người sản xuất nhỏ trong nông nghiệp",
+              "Đi vay nhà nước"
+            ],
+            "correctAnswer": 3,
+            "correctAnswers": null
+          },
+          "explanation": null,
           "needsReview": false
         },
         {
@@ -686,6 +748,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -700,6 +763,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -714,6 +778,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -728,6 +793,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -742,6 +808,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -756,6 +823,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -769,6 +837,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -782,6 +851,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -796,6 +866,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -810,6 +881,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -824,6 +896,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -837,6 +910,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -851,6 +925,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -861,18 +936,23 @@
             "Hoạt động cơ bản nhất, là phẩm chất đặc biệt của con người",
             "Là hoạt động có mục đích, có ý thức của con người",
             "Là sự tiêu dùng sức lao động trong hiện thực",
-            "Các phương án trả lời đều đúng",
-            "Hoạt động chính trị.",
-            "Hoạt động sản xuất của cải vật chất.",
-            "Hoạt động nghệ thuật, thể thao.",
-            "Hoạt động thực nghiệm khoa học.)"
+            "Các phương án trả lời đều đúng"
           ],
-          "correctAnswer": null,
-          "correctAnswers": [
-            3,
-            5
-          ],
-          "explanation": "(Kiểu hỏi khác:Hoạt động nào của con người được coi là cơ bản nhất và là cơ sở của đời sống xã hội?",
+          "correctAnswer": 3,
+          "correctAnswers": null,
+          "variant": {
+            "title": "Kiểu hỏi khác",
+            "question": "Hoạt động nào của con người được coi là cơ bản nhất và là cơ sở của đời sống xã hội?",
+            "options": [
+              "Hoạt động chính trị.",
+              "Hoạt động sản xuất của cải vật chất.",
+              "Hoạt động nghệ thuật, thể thao.",
+              "Hoạt động thực nghiệm khoa học."
+            ],
+            "correctAnswer": 1,
+            "correctAnswers": null
+          },
+          "explanation": null,
           "needsReview": false
         }
       ]
@@ -892,6 +972,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -906,6 +987,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -920,6 +1002,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -934,6 +1017,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -951,6 +1035,7 @@
             0,
             2
           ],
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -964,6 +1049,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -978,6 +1064,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -992,7 +1079,8 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
-          "explanation": "(Kiểu hỏi khác: Đâu không phải là mục đích của hội nhập kinh tế quốc tế? -> Đầu tư tư bản trực tiếp thu lợi nhuận ở nước ngoài)",
+          "variant": null,
+          "explanation": null,
           "needsReview": false
         },
         {
@@ -1006,6 +1094,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1020,6 +1109,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1034,6 +1124,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1048,7 +1139,8 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
-          "explanation": "(Kiểu hỏi khác: Nguyên nhân nào quyết định nhất dẫn đến sự sụp đổ của Liên Xô và hệ thống XHCN ở Đông Âu?)",
+          "variant": null,
+          "explanation": null,
           "needsReview": false
         },
         {
@@ -1062,6 +1154,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1076,6 +1169,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1089,6 +1183,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1103,6 +1198,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1116,6 +1212,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1129,6 +1226,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1143,6 +1241,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1157,6 +1256,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1171,6 +1271,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1185,6 +1286,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1199,6 +1301,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": "(W = c + v + mc = 100000 + 5000 = 105000v = 5000\nm = m'.v = 2 x 5000 = 10000W = 105000 + 5000 + 10000 = 120000)",
           "needsReview": false
         },
@@ -1213,6 +1316,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1230,6 +1334,7 @@
             0,
             2
           ],
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1243,6 +1348,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1256,6 +1362,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1270,6 +1377,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1284,6 +1392,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1298,6 +1407,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1312,6 +1422,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": "(Gia nhập năm 2006, trở thành thành viên năm 2007)",
           "needsReview": false
         },
@@ -1326,6 +1437,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1340,6 +1452,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1354,6 +1467,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1368,6 +1482,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1382,6 +1497,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1396,6 +1512,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1410,6 +1527,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1424,6 +1542,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1437,6 +1556,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1447,18 +1567,23 @@
             "Adam Smith",
             "David Ricardo",
             "Karl Marx",
-            "Willian Stafford",
-            "David Ricardo",
-            "Adam Smith",
-            "William Petty",
-            "Thomas Mun )"
+            "Willian Stafford"
           ],
-          "correctAnswer": null,
-          "correctAnswers": [
-            0,
-            5
-          ],
-          "explanation": "(Kiểu hỏi khác: Kinh tế chính trị cổ điển Anh được hình thành và phát triển từ cuối thế ký XVIII đến nửa đầu thế kỷ XIX, mở đầu bằng các quan điểm lý luận của nhà kinh tế chính trị học nào sau đây?",
+          "correctAnswer": 0,
+          "correctAnswers": null,
+          "variant": {
+            "title": "Kiểu hỏi khác",
+            "question": "Kinh tế chính trị cổ điển Anh được hình thành và phát triển từ cuối thế ký XVIII đến nửa đầu thế kỷ XIX, mở đầu bằng các quan điểm lý luận của nhà kinh tế chính trị học nào sau đây?",
+            "options": [
+              "David Ricardo",
+              "Adam Smith",
+              "William Petty",
+              "Thomas Mun"
+            ],
+            "correctAnswer": 1,
+            "correctAnswers": null
+          },
+          "explanation": null,
           "needsReview": false
         },
         {
@@ -1471,6 +1596,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1485,6 +1611,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1499,6 +1626,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1513,6 +1641,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1527,6 +1656,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1541,6 +1671,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1555,6 +1686,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1568,6 +1700,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1582,6 +1715,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1596,6 +1730,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1609,6 +1744,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1622,6 +1758,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1636,6 +1773,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": "(Đảng Cộng sản Việt Nam, Văn kiện Đại hội đại biểu toàn quốc lần thứ IX, NXB CTQG, H., 2001, tr 64 - 65)",
           "needsReview": false
         },
@@ -1649,6 +1787,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1663,6 +1802,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1677,6 +1817,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1691,6 +1832,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1705,6 +1847,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1718,6 +1861,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         }
@@ -1738,6 +1882,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1757,6 +1902,7 @@
             3,
             4
           ],
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1771,6 +1917,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1785,6 +1932,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": "(Đối tượng nghiên cứu của kinh tế chính trị Mác – Lênin các quan hệ sản xuất và trao đổi trong mối quan hệ biện chứng với lực lượng sản xuất và kiến trúc thượng tầng.)",
           "needsReview": false
         },
@@ -1799,6 +1947,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1813,6 +1962,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1827,6 +1977,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1841,6 +1992,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1855,6 +2007,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1869,6 +2022,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1883,6 +2037,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1897,6 +2052,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1911,6 +2067,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1924,6 +2081,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1938,6 +2096,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1952,6 +2111,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1966,6 +2126,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1979,6 +2140,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -1993,6 +2155,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2007,6 +2170,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": "(đề chưa rõ, nếu “chủ đạo” thì là nhà nước, còn “động lực” thì là tư nhân)",
           "needsReview": false
         },
@@ -2021,6 +2185,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2035,6 +2200,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2049,6 +2215,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2063,6 +2230,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2077,6 +2245,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2091,6 +2260,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2105,6 +2275,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2119,6 +2290,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2133,6 +2305,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2147,6 +2320,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2161,6 +2335,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2175,7 +2350,8 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
-          "explanation": "(Kiểu hỏi khác: Đặc điểm nào dưới đây không phải của kinh tế thị trường?)",
+          "variant": null,
+          "explanation": null,
           "needsReview": false
         },
         {
@@ -2189,6 +2365,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2203,6 +2380,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2216,6 +2394,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2229,6 +2408,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2243,6 +2423,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2257,6 +2438,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2271,6 +2453,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2285,6 +2468,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2298,6 +2482,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2311,6 +2496,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2329,6 +2515,7 @@
             1,
             2
           ],
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2343,6 +2530,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2356,6 +2544,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2369,6 +2558,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2383,6 +2573,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2397,6 +2588,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2411,6 +2603,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2425,6 +2618,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2438,6 +2632,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2452,6 +2647,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2466,6 +2662,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2480,6 +2677,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2493,6 +2691,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2503,18 +2702,23 @@
             "Từ đầu thập niên 50 của thế kỷ XX đến cuối thế kỷ XX",
             "Từ đầu thập niên 60 của thế kỷ XX đến cuối thế kỷ XX",
             "Từ đầu thập niên 70 của thế kỷ XX đến cuối thế kỷ XX",
-            "Từ đầu thập niên 80 của thế kỷ XX đến cuối thế kỷ XX",
-            "Từ giữa thế kỷ XV đến giữa thế kỷ XIX",
-            "Từ giữa thế kỷ XVI đến giữa thế kỷ XVII",
-            "Từ giữa thế kỷ XVIII đến giữa thế kỷ XIX",
-            "Từ đầu những năm 60 của XX đến cuối thế kỷ XX)"
+            "Từ đầu thập niên 80 của thế kỷ XX đến cuối thế kỷ XX"
           ],
-          "correctAnswer": null,
-          "correctAnswers": [
-            1,
-            7
-          ],
-          "explanation": "(Kiểu hỏi khác: Cách mạng công nghiệp lần thứ ba diễn ra trong thời gian nào?",
+          "correctAnswer": 1,
+          "correctAnswers": null,
+          "variant": {
+            "title": "Kiểu hỏi khác",
+            "question": "Cách mạng công nghiệp lần thứ ba diễn ra trong thời gian nào?",
+            "options": [
+              "Từ giữa thế kỷ XV đến giữa thế kỷ XIX",
+              "Từ giữa thế kỷ XVI đến giữa thế kỷ XVII",
+              "Từ giữa thế kỷ XVIII đến giữa thế kỷ XIX",
+              "Từ đầu những năm 60 của XX đến cuối thế kỷ XX"
+            ],
+            "correctAnswer": 3,
+            "correctAnswers": null
+          },
+          "explanation": null,
           "needsReview": false
         },
         {
@@ -2528,6 +2732,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2542,6 +2747,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2556,6 +2762,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2570,6 +2777,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         }
@@ -2590,6 +2798,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2599,18 +2808,23 @@
           "options": [
             "Đặc điểm của giai đoạn chủ nghĩa tư bản tự do cạnh tranh",
             "Đặc điểm của giai đoạn chủ nghĩa tư bản độc quyền tự do cạnh tranh",
-            "Đặc điểm của giai đoạn chủ nghĩa tư bản độc quyền nhà nước",
-            "Sản xuất hàng hóa giản đơn",
-            "Phương thức sản xuất tư bản chủ nghĩa",
-            "Giai đoạn chủ nghĩa tư bản tự do cạnh tranh",
-            "Giai đoạn chủ nghĩa tư bản độc quyền)"
+            "Đặc điểm của giai đoạn chủ nghĩa tư bản độc quyền nhà nước"
           ],
-          "correctAnswer": null,
-          "correctAnswers": [
-            0,
-            5
-          ],
-          "explanation": "(Kiểu hỏi khác: Xuất khẩu hàng hóa là một trong những đặc điểm của:",
+          "correctAnswer": 0,
+          "correctAnswers": null,
+          "variant": {
+            "title": "Kiểu hỏi khác",
+            "question": "Xuất khẩu hàng hóa là một trong những đặc điểm của:",
+            "options": [
+              "Sản xuất hàng hóa giản đơn",
+              "Phương thức sản xuất tư bản chủ nghĩa",
+              "Giai đoạn chủ nghĩa tư bản tự do cạnh tranh",
+              "Giai đoạn chủ nghĩa tư bản độc quyền"
+            ],
+            "correctAnswer": 2,
+            "correctAnswers": null
+          },
+          "explanation": null,
           "needsReview": false
         },
         {
@@ -2623,6 +2837,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2637,6 +2852,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2651,6 +2867,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2664,6 +2881,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2678,6 +2896,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2692,6 +2911,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2705,6 +2925,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2715,18 +2936,23 @@
             "Các chủ thể kinh tế có tính độc lập, nghĩa là có quyền tự chủ trong sản xuất, kinh doanh, lỗ lãi tự chịu",
             "Các chủ thể kinh tế không có tính độc lập, nghĩ là không có quyền tự chủ trong sản xuất, kinh doanh, lỗ lãi tự chịu",
             "Các chủ thể kinh tế có tính độc lập, nghĩa là có quyền quyết định lỗ lãi",
-            "Các chủ thể kinh tế có tính độc lập, nghĩa là có quyền làm bất cứ những gì họ muốn",
-            "Có hệ thống pháp quy kiện toàn và sự quản lý vĩ mô của Nhà nước",
-            "Có hệ thống pháp quy kiện toàn và sự quản lý của Nhà nước",
-            "Có hệ thống pháp quy kiện toàn và sự quản lý văn hóa xã hội của Nhà nước",
-            "Có hệ thống pháp quy kiện toàn và sự quản lý kinh tế, giáo dục của Nhà nước)"
+            "Các chủ thể kinh tế có tính độc lập, nghĩa là có quyền làm bất cứ những gì họ muốn"
           ],
-          "correctAnswer": null,
-          "correctAnswers": [
-            0,
-            4
-          ],
-          "explanation": "(Kiểu hỏi khác: Một trong những đặc điểm chủ yếu của bất kỳ xã hội nào lấy thị trường làm phương tiện có tính cơ sở để phân phối các nguồn lực kinh tế là",
+          "correctAnswer": 0,
+          "correctAnswers": null,
+          "variant": {
+            "title": "Kiểu hỏi khác",
+            "question": "Một trong những đặc điểm chủ yếu của bất kỳ xã hội nào lấy thị trường làm phương tiện có tính cơ sở để phân phối các nguồn lực kinh tế là",
+            "options": [
+              "Có hệ thống pháp quy kiện toàn và sự quản lý vĩ mô của Nhà nước",
+              "Có hệ thống pháp quy kiện toàn và sự quản lý của Nhà nước",
+              "Có hệ thống pháp quy kiện toàn và sự quản lý văn hóa xã hội của Nhà nước",
+              "Có hệ thống pháp quy kiện toàn và sự quản lý kinh tế, giáo dục của Nhà nước"
+            ],
+            "correctAnswer": 0,
+            "correctAnswers": null
+          },
+          "explanation": null,
           "needsReview": false
         },
         {
@@ -2740,6 +2966,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2753,6 +2980,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2767,6 +2995,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2780,6 +3009,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2793,6 +3023,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2807,6 +3038,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2820,6 +3052,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2834,6 +3067,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2848,6 +3082,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2862,6 +3097,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2875,6 +3111,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2888,6 +3125,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2902,6 +3140,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2915,6 +3154,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2929,6 +3169,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2942,6 +3183,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2960,6 +3202,7 @@
             1,
             2
           ],
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2973,6 +3216,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2986,6 +3230,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -2996,18 +3241,23 @@
             "Giai cấp tư sản ngày càng giàu có, mâu thuẫn trong chủ nghĩa tư bản tăng lên",
             "Cấu tạo hữu cơ của tư bản tăng lên",
             "Quá trình bần cùng hóa giai cấp vô sản",
-            "Khoảng cách giàu nghèo ngày càng tăng, nạn thất nghiệp trở nên phổ biến",
-            "Tư bản hóa tư liệu tiêu dùng",
-            "Tư bản hóa giá trị thặng dư",
-            "Tư bản hóa sức lao động",
-            "Tư bản hóa giá trị sản xuất)"
+            "Khoảng cách giàu nghèo ngày càng tăng, nạn thất nghiệp trở nên phổ biến"
           ],
-          "correctAnswer": null,
-          "correctAnswers": [
-            0,
-            5
-          ],
-          "explanation": "(Kiểu hỏi khác: Tích lũy tư bản là gì?",
+          "correctAnswer": 0,
+          "correctAnswers": null,
+          "variant": {
+            "title": "Kiểu hỏi khác",
+            "question": "Tích lũy tư bản là gì?",
+            "options": [
+              "Tư bản hóa tư liệu tiêu dùng",
+              "Tư bản hóa giá trị thặng dư",
+              "Tư bản hóa sức lao động",
+              "Tư bản hóa giá trị sản xuất"
+            ],
+            "correctAnswer": 1,
+            "correctAnswers": null
+          },
+          "explanation": null,
           "needsReview": false
         },
         {
@@ -3021,6 +3271,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3034,6 +3285,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3047,6 +3299,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3061,6 +3314,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3075,6 +3329,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3093,6 +3348,7 @@
             1,
             3
           ],
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3107,6 +3363,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3120,6 +3377,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3133,6 +3391,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": "B",
           "needsReview": false
         },
@@ -3147,6 +3406,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3161,6 +3421,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": "hay không?",
           "needsReview": false
         },
@@ -3175,6 +3436,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3189,6 +3451,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3203,6 +3466,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3217,6 +3481,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3235,6 +3500,7 @@
             1,
             3
           ],
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3249,6 +3515,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3263,6 +3530,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3277,6 +3545,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3291,6 +3560,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3305,6 +3575,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3319,6 +3590,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3333,6 +3605,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3347,6 +3620,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3361,6 +3635,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3375,6 +3650,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3389,6 +3665,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3403,6 +3680,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3417,6 +3695,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3431,6 +3710,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         }
@@ -3450,6 +3730,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3464,6 +3745,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3478,6 +3760,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3492,6 +3775,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3506,6 +3790,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3520,6 +3805,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3534,6 +3820,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3547,6 +3834,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3561,6 +3849,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3575,6 +3864,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3588,6 +3878,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3602,6 +3893,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3616,6 +3908,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3630,6 +3923,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3644,6 +3938,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3658,6 +3953,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3672,6 +3968,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3686,6 +3983,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3700,6 +3998,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3713,6 +4012,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3726,6 +4026,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3739,6 +4040,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3752,6 +4054,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3766,6 +4069,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3780,6 +4084,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3794,6 +4099,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3808,6 +4114,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3822,6 +4129,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3836,6 +4144,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3850,6 +4159,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": "d",
           "needsReview": false
         },
@@ -3864,6 +4174,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3877,6 +4188,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3891,6 +4203,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3905,6 +4218,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3918,6 +4232,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3932,6 +4247,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3946,6 +4262,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3960,6 +4277,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3974,6 +4292,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -3988,6 +4307,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4001,6 +4321,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4015,6 +4336,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4028,6 +4350,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4042,6 +4365,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4056,6 +4380,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4069,6 +4394,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4082,6 +4408,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4095,6 +4422,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4108,6 +4436,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4122,6 +4451,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4135,6 +4465,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4149,6 +4480,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4163,6 +4495,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4172,17 +4505,22 @@
           "options": [
             "1615",
             "1616",
-            "1617",
-            "Francois Quesney",
-            "Antoine Montchretiên",
-            "William Petty)"
+            "1617"
           ],
-          "correctAnswer": null,
-          "correctAnswers": [
-            0,
-            4
-          ],
-          "explanation": "(Kiểu hỏi khác: Ai là người đầu tiên đưa ra khái niệm \"kinh tế- chính trị\"?",
+          "correctAnswer": 0,
+          "correctAnswers": null,
+          "variant": {
+            "title": "Kiểu hỏi khác",
+            "question": "Ai là người đầu tiên đưa ra khái niệm \"kinh tế- chính trị\"?",
+            "options": [
+              "Francois Quesney",
+              "Antoine Montchretiên",
+              "William Petty"
+            ],
+            "correctAnswer": 1,
+            "correctAnswers": null
+          },
+          "explanation": null,
           "needsReview": false
         },
         {
@@ -4195,6 +4533,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4209,6 +4548,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4222,6 +4562,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4235,6 +4576,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4248,6 +4590,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4261,6 +4604,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         }
@@ -4280,6 +4624,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4294,6 +4639,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4307,6 +4653,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4320,6 +4667,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4334,6 +4682,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4348,6 +4697,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4361,6 +4711,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4375,6 +4726,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4389,6 +4741,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4402,6 +4755,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4416,6 +4770,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4430,6 +4785,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4443,6 +4799,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4457,6 +4814,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4471,6 +4829,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4485,6 +4844,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4499,6 +4859,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4513,6 +4874,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4527,6 +4889,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4541,6 +4904,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4555,6 +4919,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4565,18 +4930,23 @@
             "Tất cả các chức năng của tiền tệ",
             "Chỉ có chức năng thước đo giá trị",
             "Chức năng thước đo giá trị, chức năng tích lũy và chức năng cất trữ",
-            "Chức năng thước đo giá trị; chức năng tích lũy, cất trữ và chức năng tiền tệ thế giới.",
-            "Tiên giấy",
-            "Tiền điện tủ",
-            "Tiền vàng",
-            "Bitcoin)"
+            "Chức năng thước đo giá trị; chức năng tích lũy, cất trữ và chức năng tiền tệ thế giới."
           ],
-          "correctAnswer": null,
-          "correctAnswers": [
-            3,
-            6
-          ],
-          "explanation": "(Kiểu hỏi khác:Theo kinh tế - chính trị Mác - Lênin, loại tiền nào có chức năng cất trữ?",
+          "correctAnswer": 3,
+          "correctAnswers": null,
+          "variant": {
+            "title": "Kiểu hỏi khác",
+            "question": "Theo kinh tế - chính trị Mác - Lênin, loại tiền nào có chức năng cất trữ?",
+            "options": [
+              "Tiên giấy",
+              "Tiền điện tủ",
+              "Tiền vàng",
+              "Bitcoin"
+            ],
+            "correctAnswer": 2,
+            "correctAnswers": null
+          },
+          "explanation": null,
           "needsReview": false
         },
         {
@@ -4593,6 +4963,7 @@
             0,
             2
           ],
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4607,6 +4978,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4621,6 +4993,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4634,6 +5007,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4647,6 +5021,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4660,6 +5035,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4673,6 +5049,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4687,6 +5064,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4700,6 +5078,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4714,6 +5093,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4727,6 +5107,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4740,6 +5121,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4753,6 +5135,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4767,6 +5150,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4780,6 +5164,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4794,6 +5179,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4807,6 +5193,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4821,6 +5208,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4834,6 +5222,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4847,6 +5236,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4860,6 +5250,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4873,6 +5264,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4887,6 +5279,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4901,6 +5294,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4915,6 +5309,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4928,6 +5323,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4941,6 +5337,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4954,6 +5351,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4968,6 +5366,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4981,6 +5380,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -4994,6 +5394,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5008,6 +5409,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5022,6 +5424,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5036,6 +5439,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5050,6 +5454,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5064,6 +5469,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5078,6 +5484,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5092,6 +5499,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         }
@@ -5111,6 +5519,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5125,6 +5534,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5138,6 +5548,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5156,6 +5567,7 @@
             1,
             2
           ],
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5170,6 +5582,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5184,6 +5597,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5197,6 +5611,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5211,6 +5626,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5225,6 +5641,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5239,6 +5656,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5252,6 +5670,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5266,6 +5685,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5279,6 +5699,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5289,18 +5710,23 @@
             "G= c + p + m",
             "G= c + v + P",
             "G= k + v + m",
-            "G= c + v + m",
-            "W= C + V+ M",
-            "W= C+ V",
-            "W= V+ M",
-            "W= (C + V)/M)"
+            "G= c + v + m"
           ],
-          "correctAnswer": null,
-          "correctAnswers": [
-            3,
-            4
-          ],
-          "explanation": "(Kiểu hỏi khác: Gọi W là giá trị hàng hóa, vậy công thức tính giá trị hàng hóa là gì?",
+          "correctAnswer": 3,
+          "correctAnswers": null,
+          "variant": {
+            "title": "Kiểu hỏi khác",
+            "question": "Gọi W là giá trị hàng hóa, vậy công thức tính giá trị hàng hóa là gì?",
+            "options": [
+              "W= C + V+ M",
+              "W= C+ V",
+              "W= V+ M",
+              "W= (C + V)/M"
+            ],
+            "correctAnswer": 0,
+            "correctAnswers": null
+          },
+          "explanation": null,
           "needsReview": false
         },
         {
@@ -5314,6 +5740,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5327,6 +5754,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5341,6 +5769,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5355,6 +5784,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5369,6 +5799,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5383,7 +5814,8 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
-          "explanation": "(Kiểu hỏi khác: Tuần hoàn tư bản là sự vận động của tư bản lần lượt trải qua ba giai đoạn dưới hình thái nào?\n=>tư bản tiền tệ, tư bản sản xuất và tư bản hàng hóa)",
+          "variant": null,
+          "explanation": null,
           "needsReview": false
         },
         {
@@ -5397,6 +5829,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5411,6 +5844,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5425,6 +5859,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5438,6 +5873,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5452,6 +5888,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5466,6 +5903,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5476,18 +5914,23 @@
             "Những vật để thỏa mãn nhu cầu tiêu dùng của con người",
             "Sản phẩm của lao động, có thể thỏa mãn nhu cầu nào đó của con người thông qua trao đổi, mua bán",
             "Những vật có giá trị sử dụng cao",
-            "Những vật mà trên thị trường luôn khan hiếm",
-            "Là những vật để thỏa mãn nhu cầu tiêu dùng của con người",
-            "Là hết thảy những vật, những thứ thỏa mãn nhu cầu tiêu dùng của con người và chúng được sản xuất ra để trao đổi, buôn bán",
-            "Là những vật có giá trị sử dụng cao",
-            "Là những vật mà trên thị trường luôn khan hiếm)"
+            "Những vật mà trên thị trường luôn khan hiếm"
           ],
-          "correctAnswer": null,
-          "correctAnswers": [
-            1,
-            5
-          ],
-          "explanation": "(Kiểu hỏi khác: Hàng hóa là gì?",
+          "correctAnswer": 1,
+          "correctAnswers": null,
+          "variant": {
+            "title": "Kiểu hỏi khác",
+            "question": "Hàng hóa là gì?",
+            "options": [
+              "Là những vật để thỏa mãn nhu cầu tiêu dùng của con người",
+              "Là hết thảy những vật, những thứ thỏa mãn nhu cầu tiêu dùng của con người và chúng được sản xuất ra để trao đổi, buôn bán",
+              "Là những vật có giá trị sử dụng cao",
+              "Là những vật mà trên thị trường luôn khan hiếm"
+            ],
+            "correctAnswer": 1,
+            "correctAnswers": null
+          },
+          "explanation": null,
           "needsReview": false
         },
         {
@@ -5501,6 +5944,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5515,6 +5959,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5529,6 +5974,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5543,6 +5989,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5556,6 +6003,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5570,6 +6018,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5584,6 +6033,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5593,17 +6043,22 @@
           "options": [
             "Tạo môi trường thuận lợi cho xuất khẩu tư bản tư nhân.",
             "Tạo điều kiện cho các nước nhập khẩu tư bản phát triển",
-            "Khống chế kinh tế các nước nhập khẩu tư bản.",
-            "Ngành kết cấu hạ tầng",
-            "Ngành có vốn chu chuyển nhanh",
-            "Ngành công nghệ môi)"
+            "Khống chế kinh tế các nước nhập khẩu tư bản."
           ],
-          "correctAnswer": null,
-          "correctAnswers": [
-            0,
-            3
-          ],
-          "explanation": "(Kiểu hỏi khác: Về kinh tế, xuất khẩu tư bản nhà nước thường hướng vào:",
+          "correctAnswer": 0,
+          "correctAnswers": null,
+          "variant": {
+            "title": "Kiểu hỏi khác",
+            "question": "Về kinh tế, xuất khẩu tư bản nhà nước thường hướng vào:",
+            "options": [
+              "Ngành kết cấu hạ tầng",
+              "Ngành có vốn chu chuyển nhanh",
+              "Ngành công nghệ môi"
+            ],
+            "correctAnswer": 0,
+            "correctAnswers": null
+          },
+          "explanation": null,
           "needsReview": false
         },
         {
@@ -5617,6 +6072,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5631,6 +6087,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5645,6 +6102,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5660,6 +6118,7 @@
           ],
           "correctAnswer": 4,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5674,6 +6133,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5688,6 +6148,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5702,6 +6163,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5716,6 +6178,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5730,6 +6193,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5744,6 +6208,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5758,6 +6223,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5772,6 +6238,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5786,6 +6253,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5800,6 +6268,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5814,6 +6283,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5829,6 +6299,7 @@
           ],
           "correctAnswer": 4,
           "correctAnswers": null,
+          "variant": null,
           "explanation": "cũng như quản lý nhà nước hướng tới xác lập những giá trị cốt lõi về xã hội",
           "needsReview": false
         },
@@ -5843,6 +6314,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5857,6 +6329,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5871,6 +6344,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5884,6 +6358,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5897,6 +6372,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5911,6 +6387,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5925,6 +6402,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5938,6 +6416,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5952,6 +6431,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": "(Giải thích: mầm mống → B\nhình thành → A)",
           "needsReview": false
         }
@@ -5971,6 +6451,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5984,6 +6465,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -5994,18 +6476,23 @@
             "Đại hội IX (2001)",
             "Đại hội X (2006)",
             "Đại hội XI (2011)",
-            "Đại hội V (1982)",
-            "Đại hội VI",
-            "Đại hội VIII",
-            "Đại hội IX",
-            "Đại hội X)"
+            "Đại hội V (1982)"
           ],
-          "correctAnswer": null,
-          "correctAnswers": [
-            0,
-            6
-          ],
-          "explanation": "(Kiểu hỏi khác: Mô hình kinh tế thị trường định hướng xã hội chủ nghĩa ở nước ta được chính thức nêu ra ở Đại hội nào của Đảng Cộng sản Việt Nam ?",
+          "correctAnswer": 0,
+          "correctAnswers": null,
+          "variant": {
+            "title": "Kiểu hỏi khác",
+            "question": "Mô hình kinh tế thị trường định hướng xã hội chủ nghĩa ở nước ta được chính thức nêu ra ở Đại hội nào của Đảng Cộng sản Việt Nam ?",
+            "options": [
+              "Đại hội VI",
+              "Đại hội VIII",
+              "Đại hội IX",
+              "Đại hội X"
+            ],
+            "correctAnswer": 2,
+            "correctAnswers": null
+          },
+          "explanation": null,
           "needsReview": false
         },
         {
@@ -6019,6 +6506,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6033,6 +6521,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6047,6 +6536,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6061,6 +6551,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6074,6 +6565,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6087,6 +6579,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6104,6 +6597,7 @@
             0,
             1
           ],
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6118,6 +6612,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6132,6 +6627,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6146,6 +6642,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6159,6 +6656,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6173,6 +6671,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6187,6 +6686,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6201,6 +6701,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6215,6 +6716,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6229,6 +6731,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6242,6 +6745,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6256,6 +6760,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6270,6 +6775,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6283,6 +6789,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6297,6 +6804,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6311,6 +6819,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6325,6 +6834,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6339,6 +6849,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6353,6 +6864,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6367,6 +6879,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6381,6 +6894,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6395,6 +6909,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6409,6 +6924,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6423,6 +6939,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6437,6 +6954,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6451,6 +6969,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6465,6 +6984,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6479,6 +6999,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6492,6 +7013,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6506,6 +7028,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6520,6 +7043,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6533,6 +7057,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6546,6 +7071,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6559,6 +7085,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6573,6 +7100,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6587,6 +7115,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6605,6 +7134,7 @@
             1,
             2
           ],
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6619,6 +7149,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6633,6 +7164,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6647,6 +7179,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6661,6 +7194,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6675,6 +7209,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6689,6 +7224,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6703,6 +7239,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6716,6 +7253,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6730,6 +7268,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": "(Điều gì xảy ra nếu cung lớn hơn cầu? ->B)",
           "needsReview": false
         },
@@ -6744,6 +7283,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6758,6 +7298,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6772,6 +7313,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6786,6 +7328,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6800,6 +7343,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         }
@@ -6820,6 +7364,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6834,6 +7379,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6848,6 +7394,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6862,6 +7409,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6875,6 +7423,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6889,6 +7438,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6903,6 +7453,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6917,6 +7468,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6931,6 +7483,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6944,6 +7497,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6958,6 +7512,7 @@
           ],
           "correctAnswer": 2,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6972,6 +7527,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -6986,6 +7542,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -7000,6 +7557,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -7014,6 +7572,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -7028,6 +7587,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -7041,6 +7601,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -7055,6 +7616,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -7069,6 +7631,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -7083,6 +7646,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -7097,6 +7661,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -7111,6 +7676,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -7125,6 +7691,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -7142,6 +7709,7 @@
             0,
             2
           ],
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -7156,6 +7724,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -7170,6 +7739,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -7184,6 +7754,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -7198,6 +7769,7 @@
           ],
           "correctAnswer": 3,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -7215,6 +7787,7 @@
             0,
             2
           ],
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -7228,6 +7801,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -7245,6 +7819,7 @@
             0,
             2
           ],
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -7259,6 +7834,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -7273,6 +7849,7 @@
           ],
           "correctAnswer": 1,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -7287,6 +7864,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         },
@@ -7301,6 +7879,7 @@
           ],
           "correctAnswer": 0,
           "correctAnswers": null,
+          "variant": null,
           "explanation": null,
           "needsReview": false
         }

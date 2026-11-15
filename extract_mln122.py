@@ -42,6 +42,21 @@ def find_headings(document):
     return headings
 
 
+def clean_variant_title_question(text: str) -> tuple[str, str]:
+    t = text.strip()
+    if t.startswith("("):
+        t = t[1:].strip()
+    if t.endswith(")"):
+        t = t[:-1].strip()
+    m = re.match(r"^Kiểu hỏi khác\s*[:\-]\s*(.*)$", t, re.IGNORECASE | re.DOTALL)
+    if m:
+        question = m.group(1).strip()
+    else:
+        question = t
+    question = re.sub(r"\?\)", "?", question)
+    return "Kiểu hỏi khác", question
+
+
 def extract():
     document = Document(SOURCE)
     headings = find_headings(document)
@@ -50,32 +65,67 @@ def extract():
 
     for pos, (paragraph_index, number, question_text) in enumerate(headings):
         end = headings[pos + 1][0] if pos + 1 < len(headings) else len(document.paragraphs)
-        options, marked_indexes, notes = [], [], []
+        main_options, main_marked = [], []
+        variant_text, variant_options, variant_marked = None, [], []
+        notes = []
+        in_variant = False
+
         for paragraph in document.paragraphs[paragraph_index + 1 : end]:
             text = paragraph.text.strip()
             if not text:
                 continue
             match = OPTION_RE.match(text)
             if match:
-                options.append(match.group(2).strip())
-                if marked(paragraph):
-                    marked_indexes.append(len(options) - 1)
+                letter = match.group(1)
+                opt_text = match.group(2).strip()
+                if letter == "A" and len(main_options) >= 3 and not in_variant:
+                    in_variant = True
+
+                if in_variant:
+                    if opt_text.endswith(")"):
+                        opt_text = opt_text[:-1].strip()
+                    variant_options.append(opt_text)
+                    if marked(paragraph):
+                        variant_marked.append(len(variant_options) - 1)
+                else:
+                    main_options.append(opt_text)
+                    if marked(paragraph):
+                        main_marked.append(len(main_options) - 1)
             else:
-                notes.append(text)
+                if "Kiểu hỏi khác" in text:
+                    in_variant = True
+                    variant_text = text
+                elif in_variant and not variant_options:
+                    variant_text = (variant_text + "\n" + text) if variant_text else text
+                else:
+                    notes.append(text)
+
             for run in paragraph.runs:
                 format_counts["bold"] += run.bold is True
                 format_counts["underline"] += run.underline is True
                 format_counts["highlight"] += run.font.highlight_color is not None
                 format_counts["color"] += run.font.color.rgb is not None
 
+        var_obj = None
+        if variant_options:
+            v_title, v_q = clean_variant_title_question(variant_text or "Kiểu hỏi khác")
+            var_obj = {
+                "title": v_title,
+                "question": v_q,
+                "options": variant_options,
+                "correctAnswer": variant_marked[0] if len(variant_marked) == 1 else None,
+                "correctAnswers": variant_marked if len(variant_marked) > 1 else None,
+            }
+
         questions.append({
             "id": number,
             "question": question_text,
-            "options": options,
-            "correctAnswer": marked_indexes[0] if len(marked_indexes) == 1 else None,
-            "correctAnswers": marked_indexes if len(marked_indexes) > 1 else None,
+            "options": main_options,
+            "correctAnswer": main_marked[0] if len(main_marked) == 1 else None,
+            "correctAnswers": main_marked if len(main_marked) > 1 else None,
+            "variant": var_obj,
             "explanation": "\n".join(notes) if notes else None,
-            "needsReview": len(marked_indexes) == 0,
+            "needsReview": len(main_marked) == 0,
         })
 
     exams = []
