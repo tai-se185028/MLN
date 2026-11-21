@@ -164,6 +164,7 @@ function configModal(examId, forceNew = false) {
         }
       });
       if (exam.id === 'mixed' && state.courseId === 'prm393') {
+        const orderMap = new Map(exam.questions.map((q, idx) => [questionSignature(q), idx]));
         const seen = new Set();
         saved.questions = saved.questions.filter(sq => {
           const sig = questionSignature(sq);
@@ -171,6 +172,9 @@ function configModal(examId, forceNew = false) {
           seen.add(sig);
           return true;
         });
+        if (saved.questions.length === exam.questions.length && !saved.shuffleQuestions) {
+          saved.questions.sort((a, b) => (orderMap.get(questionSignature(a)) ?? 0) - (orderMap.get(questionSignature(b)) ?? 0));
+        }
         saved.questionOrder = saved.questions.map(sq => sq.id);
         if (saved.current >= saved.questions.length) {
           saved.current = Math.max(0, saved.questions.length - 1);
@@ -194,7 +198,7 @@ function configModal(examId, forceNew = false) {
         <button class="choice-tile" data-mode="exam"><strong>⏱ Thi thử</strong><span>Chấm điểm sau khi nộp bài</span></button>
       </div>
       ${exam.id === 'mixed' ? `<div class="field"><label for="question-count">Số câu trong lượt</label><select id="question-count">
-        ${[10,20,30,50,100,exam.questions.length].filter((n,i,a)=>n<=exam.questions.length&&a.indexOf(n)===i).map(n => `<option value="${n}">${n === exam.questions.length ? `Toàn bộ ${exam.questions.length} câu` : `${n} câu ngẫu nhiên`}</option>`).join('')}
+        ${[exam.questions.length,10,20,30,50,100].filter((n,i,a)=>n<=exam.questions.length&&a.indexOf(n)===i).map(n => `<option value="${n}">${n === exam.questions.length ? `Toàn bộ ${exam.questions.length} câu (theo thứ tự)` : `${n} câu ngẫu nhiên`}</option>`).join('')}
         <option value="wrong" ${wrongCount ? '' : 'disabled'}>Chỉ câu từng làm sai (${wrongCount})</option>
       </select></div>` : ''}
       <div class="switch-row"><div><strong>Trộn thứ tự câu hỏi</strong><small>Mỗi lượt có thứ tự khác nhau</small></div><label class="switch"><input id="shuffle-questions" type="checkbox"><span class="slider"></span></label></div>
@@ -208,14 +212,17 @@ function createSession() {
   const exam = state.configExam;
   let questions = [...exam.questions];
   const countEl = document.querySelector('#question-count');
+  const shuffleQuestions = document.querySelector('#shuffle-questions').checked;
+  const shuffleOptions = document.querySelector('#shuffle-options').checked;
   if (exam.id === 'mixed' && countEl?.value === 'wrong') {
     const wrongIds = read(STORAGE.wrong, {});
     questions = questions.filter(q => isWrongQuestion(wrongIds, q));
   } else if (exam.id === 'mixed') {
-    questions = shuffle(questions).slice(0, Math.min(Number(countEl.value), questions.length));
+    const limit = Math.min(Number(countEl.value), questions.length);
+    if (limit < questions.length) {
+      questions = shuffle(questions).slice(0, limit);
+    }
   }
-  const shuffleQuestions = document.querySelector('#shuffle-questions').checked;
-  const shuffleOptions = document.querySelector('#shuffle-options').checked;
   if (shuffleQuestions) questions = shuffle(questions);
   const prepared = questions.map(q => {
     const optionEntries = q.options.map((text, originalIndex) => ({text, originalIndex}));
@@ -246,7 +253,7 @@ function createSession() {
     id:`${Date.now()}-${Math.random().toString(16).slice(2)}`,
     examId:exam.id, courseId:state.courseId, title:exam.title, mode:state.configMode, questions:prepared,
     questionOrder:prepared.map(q => q.id), answers:{}, flags:{}, revealed:{}, current:0,
-    submitted:false, createdAt:Date.now(), updatedAt:Date.now()
+    shuffleQuestions, submitted:false, createdAt:Date.now(), updatedAt:Date.now()
   };
   saveSession();
   renderQuiz();
