@@ -578,10 +578,12 @@ app.addEventListener('click', event => {
 async function init() {
   document.body.classList.toggle('dark', read(STORAGE.theme, false));
   try {
-    const [mln111Response, mln122Response] = await Promise.all([fetch('questions.json'), fetch('questions-mln122.json')]);
-    if (!mln111Response.ok || !mln122Response.ok) throw new Error(`HTTP ${mln111Response.status}/${mln122Response.status}`);
-    const [mln111, mln122] = await Promise.all([mln111Response.json(), mln122Response.json()]);
-    courses = { mln111, mln122 };
+    const sources = { mln111: 'questions.json', mln122: 'questions-mln122.json', prm393: 'questions-prm393.json' };
+    const responses = await Promise.all(Object.values(sources).map(url => fetch(url)));
+    const failed = responses.filter(res => !res.ok);
+    if (failed.length) throw new Error(`HTTP ${failed.map(res => `${res.status} ${res.url}`).join(', ')}`);
+    const payloads = await Promise.all(responses.map(res => res.json()));
+    courses = Object.fromEntries(Object.keys(sources).map((id, i) => [id, payloads[i]]));
     renderCourseSelection();
   } catch(error) {
     app.innerHTML = `<div class="loading"><h2>Không tải được dữ liệu</h2><p>Hãy chạy website qua web server cục bộ, không mở trực tiếp file HTML.</p><code>python -m http.server 8000</code></div>`;

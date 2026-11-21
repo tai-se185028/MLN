@@ -36,10 +36,10 @@ h1 { font-size: clamp(32px,5vw,52px); line-height: 1.08; letter-spacing: -.035em
 .hero-stat { min-width: 185px; padding: 18px 22px; background: linear-gradient(135deg,var(--blue),#4c8dff); color: #fff; border-radius: var(--radius); box-shadow: var(--shadow); }
 .hero-stat strong { display: block; font-size: 28px; }
 .hero-stat span { font-size: 13px; opacity: .82; }
-.course-page { max-width:1000px; }
+.course-page { max-width:1180px; }
 .course-hero { justify-content:center; text-align:center; margin:28px auto 42px; }
 .course-hero .hero-copy { margin-inline:auto; }
-.course-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; }
+.course-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:24px; }
 .course-card { min-height:280px; padding:32px; text-align:left; color:var(--ink); background:var(--surface); border:1px solid var(--line); border-radius:26px; box-shadow:var(--shadow); display:flex; flex-direction:column; align-items:flex-start; transition:.2s; }
 .course-card:hover { transform:translateY(-5px); border-color:#9cbdfc; box-shadow:0 22px 55px rgba(41,69,126,.16); }
 .course-code { display:inline-flex; padding:8px 12px; color:var(--blue); background:var(--blue-soft); border-radius:10px; font-size:13px; font-weight:800; letter-spacing:.08em; }
