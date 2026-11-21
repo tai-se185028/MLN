@@ -4,7 +4,7 @@ Website trắc nghiệm tĩnh cho ba học phần MLN111, MLN122 và PRM393, dù
 
 - MLN111: 300 câu chia thành 5 đề.
 - MLN122: 515 câu chia thành 9 đề (8 đề × 60 câu và đề cuối 35 câu).
-- PRM393: 248 câu chia thành 5 đề, mỗi đề tương ứng một file `PRM393_*.md` (SP26 FE, SP26 B5 FE, SU26 FE, SU26 FE RE, SU26 B5 FE).
+- PRM393: 248 câu chia thành 5 đề (158 câu không trùng khi luyện tập tổng hợp), mỗi đề tương ứng một file `PRM393_*.md` (SP26 FE, SP26 B5 FE, SU26 FE, SU26 FE RE, SU26 B5 FE).
 
 ## Chạy website
 

@@ -26,7 +26,24 @@ const shuffle = array => {
 };
 const keyFor = examId => state.courseId === 'mln111' ? `exam-${examId}` : `${state.courseId}-exam-${examId}`;
 const questionKey = id => state.courseId === 'mln111' ? String(id) : `${state.courseId}:${id}`;
-const allQuestions = () => data.exams.flatMap(exam => exam.questions.map(q => ({...q, examId: exam.id, courseId: state.courseId})));
+const normText = (s = '') => String(s).toLowerCase().trim().replace(/\s+/g, ' ');
+const questionSignature = q => `${normText(q.question)}||${(q.options || []).map(normText).join('|')}`;
+const allQuestions = (courseData = data, courseId = state.courseId) => courseData.exams.flatMap(exam => exam.questions.map(q => ({...q, examId: exam.id, courseId})));
+const mixedQuestions = (courseData = data, courseId = state.courseId) => {
+  const all = allQuestions(courseData, courseId);
+  if (courseId !== 'prm393') return all;
+  const seen = new Map();
+  for (const q of all) {
+    const sig = questionSignature(q);
+    if (!seen.has(sig)) {
+      seen.set(sig, { ...q, duplicateIds: [q.id] });
+    } else {
+      seen.get(sig).duplicateIds.push(q.id);
+    }
+  }
+  return [...seen.values()];
+};
+const isWrongQuestion = (wrongStore, q) => (q.duplicateIds || [q.id]).some(id => wrongStore[questionKey(id)]);
 const isMulti = q => Array.isArray(q.correctAnswers) && q.correctAnswers.length > 1;
 const knownQuestion = q => Number.isInteger(q.correctAnswer) || isMulti(q) || (q.variant && Number.isInteger(q.variant.correctAnswer));
 const selectedIndexes = answer => Array.isArray(answer) ? answer : (Number.isInteger(answer) ? [answer] : []);
@@ -98,25 +115,27 @@ function renderHome(courseId = state.courseId) {
   const attempts = read(STORAGE.attempts, {});
   const sessions = read(STORAGE.sessions, {});
   const total = allQuestions().length;
+  const mixedList = mixedQuestions();
   const cards = [...data.exams.map(exam => ({...exam, mixed:false})), {
-    id:'mixed', title:'Luyện tập tổng hợp', questions:allQuestions(), mixed:true
+    id:'mixed', title:'Luyện tập tổng hợp', questions:mixedList, mixed:true
   }];
   app.innerHTML = `${header(true)}<main class="page">
     <section class="hero">
       <div><p class="eyebrow">Kho câu hỏi ${esc(data.course.title)}</p><h1>Học chắc hơn,<br>từng câu một.</h1><p class="hero-copy">Ôn tập theo từng đề hoặc luyện ngẫu nhiên. Tiến độ của bạn được lưu tự động ngay trên thiết bị này.</p></div>
-      <div class="hero-stat"><strong>${total}</strong><span>câu hỏi từ tài liệu gốc</span></div>
+      <div class="hero-stat"><strong>${total}</strong><span>${mixedList.length !== total ? `câu hỏi (${mixedList.length} câu không trùng)` : 'câu hỏi từ tài liệu gốc'}</span></div>
     </section>
     <section class="exam-grid" aria-label="Danh sách đề thi">
       ${cards.map(card => {
         const attempt = attempts[keyFor(card.id)];
         const saved = sessions[keyFor(card.id)];
         const done = saved?.questions ? saved.questions.filter(q => isQuestionAnswered(q, saved.answers?.[q.id])).length : (saved ? Object.keys(saved.answers || {}).length : 0);
+        const targetTotal = card.mixed && saved?.questionOrder?.length > card.questions.length ? card.questions.length : (saved?.questionOrder?.length || card.questions.length);
         return `<article class="exam-card ${card.mixed ? 'mixed':''}">
           <div class="card-icon">${card.mixed ? '✦' : '▤'}</div>
-          <h2>${esc(card.title)}</h2><div class="count">${card.questions.length} câu hỏi</div>
+          <h2>${esc(card.title)}</h2><div class="count">${card.questions.length} câu hỏi${card.mixed && mixedList.length !== total ? ' (đã lọc trùng)' : ''}</div>
           <div class="card-metrics">
             <div class="metric"><strong>${attempt ? `${attempt.score.toFixed(1)}/10` : '—'}</strong><span>Điểm gần nhất</span></div>
-            <div class="metric"><strong>${done}/${saved?.questionOrder?.length || card.questions.length}</strong><span>Đã hoàn thành</span></div>
+            <div class="metric"><strong>${Math.min(done, targetTotal)}/${targetTotal}</strong><span>Đã hoàn thành</span></div>
           </div>
           <div class="card-actions">
             <button class="btn btn-primary btn-wide" data-action="configure" data-exam="${card.id}">${saved ? 'Tiếp tục ôn tập' : 'Bắt đầu ôn tập'}</button>
@@ -129,7 +148,7 @@ function renderHome(courseId = state.courseId) {
 }
 
 function configModal(examId, forceNew = false) {
-  const exam = examId === 'mixed' ? {id:'mixed',title:'Luyện tập tổng hợp',questions:allQuestions()} : data.exams.find(x => String(x.id) === String(examId));
+  const exam = examId === 'mixed' ? {id:'mixed',title:'Luyện tập tổng hợp',questions:mixedQuestions()} : data.exams.find(x => String(x.id) === String(examId));
   state.configExam = exam;
   const saved = read(STORAGE.sessions, {})[keyFor(exam.id)];
   if (saved && !forceNew) {
@@ -144,15 +163,29 @@ function configModal(examId, forceNew = false) {
           sq.correctAnswers = src.correctAnswers;
         }
       });
+      if (exam.id === 'mixed' && state.courseId === 'prm393') {
+        const seen = new Set();
+        saved.questions = saved.questions.filter(sq => {
+          const sig = questionSignature(sq);
+          if (seen.has(sig)) return false;
+          seen.add(sig);
+          return true;
+        });
+        saved.questionOrder = saved.questions.map(sq => sq.id);
+        if (saved.current >= saved.questions.length) {
+          saved.current = Math.max(0, saved.questions.length - 1);
+        }
+      }
     }
     state.session = saved;
+    saveSession();
     renderQuiz();
     toast('Đã khôi phục tiến độ gần nhất');
     return;
   }
   state.configMode = 'study';
   const wrongStore = read(STORAGE.wrong, {});
-  const wrongCount = allQuestions().filter(q => wrongStore[questionKey(q.id)]).length;
+  const wrongCount = exam.questions.filter(q => isWrongQuestion(wrongStore, q)).length;
   app.insertAdjacentHTML('beforeend', `<div class="modal-backdrop" data-modal>
     <section class="modal" role="dialog" aria-modal="true" aria-labelledby="setup-title">
       <div class="modal-head"><div><h2 id="setup-title">${esc(exam.title)}</h2><p>Chọn cách bạn muốn bắt đầu lượt này.</p></div><button class="icon-btn" data-action="close-modal">×</button></div>
@@ -177,7 +210,7 @@ function createSession() {
   const countEl = document.querySelector('#question-count');
   if (exam.id === 'mixed' && countEl?.value === 'wrong') {
     const wrongIds = read(STORAGE.wrong, {});
-    questions = questions.filter(q => wrongIds[questionKey(q.id)]);
+    questions = questions.filter(q => isWrongQuestion(wrongIds, q));
   } else if (exam.id === 'mixed') {
     questions = shuffle(questions).slice(0, Math.min(Number(countEl.value), questions.length));
   }
@@ -201,7 +234,7 @@ function createSession() {
       };
     }
     return {
-      id:q.id, examId:q.examId || Math.ceil(q.id / 60), courseId:state.courseId, question:q.question,
+      id:q.id, duplicateIds:q.duplicateIds || [q.id], examId:q.examId || Math.ceil(q.id / 60), courseId:state.courseId, question:q.question,
       options:arranged.map(x => x.text),
       correctAnswer:Number.isInteger(q.correctAnswer) ? arranged.findIndex(x => x.originalIndex === q.correctAnswer) : null,
       correctAnswers:Array.isArray(q.correctAnswers) ? q.correctAnswers.map(answer => arranged.findIndex(x => x.originalIndex === answer)).sort((a,b)=>a-b) : null,
@@ -405,12 +438,13 @@ function submitQuiz() {
   s.result.wrongItems.forEach(item => { wrong[questionKey(item.q.id)] = { lastWrongAt: Date.now() }; });
   s.questions.forEach(q => {
     if (knownQuestion(q)) {
+      const ids = q.duplicateIds || [q.id];
       if (!q.variant && isCorrectAnswer(q, s.answers[q.id])) {
-        delete wrong[questionKey(q.id)];
+        ids.forEach(id => delete wrong[questionKey(id)]);
       } else if (q.variant) {
         const norm = normalizeAnswer(q, s.answers[q.id]);
         if (norm.main === q.correctAnswer && norm.variant === q.variant.correctAnswer) {
-          delete wrong[questionKey(q.id)];
+          ids.forEach(id => delete wrong[questionKey(id)]);
         }
       }
     }

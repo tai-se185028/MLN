@@ -104,8 +104,13 @@ def main():
 
     data = {"course": {"id": "prm393", "title": "PRM393"}, "exams": exams}
     OUTPUT.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+    unique_sigs = {
+        (" ".join(q["question"].casefold().split()), tuple(" ".join(o.casefold().split()) for o in q["options"]))
+        for e in exams
+        for q in e["questions"]
+    }
     report.append("")
-    report.append(f"Tổng: **{next_id - 1}** câu trong **{len(exams)}** đề.")
+    report.append(f"Tổng: **{next_id - 1}** câu trong **{len(exams)}** đề (**{len(unique_sigs)}** câu không trùng cho Luyện tập tổng hợp).")
     REPORT.write_text("\n".join(report) + "\n", encoding="utf-8")
     print("\n".join(report))
 
