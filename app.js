@@ -15,7 +15,7 @@ const read = (key, fallback) => {
   try { return JSON.parse(localStorage.getItem(key)) ?? fallback; } catch { return fallback; }
 };
 const write = (key, value) => localStorage.setItem(key, JSON.stringify(value));
-const esc = (value = '') => String(value).replace(/[&<>'"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
+const esc = (value = '') => String(value).replace(/[&<>'"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[c]));
 const shuffle = array => {
   const copy = [...array];
   for (let i = copy.length - 1; i > 0; i--) {
@@ -28,7 +28,7 @@ const keyFor = examId => state.courseId === 'mln111' ? `exam-${examId}` : `${sta
 const questionKey = id => state.courseId === 'mln111' ? String(id) : `${state.courseId}:${id}`;
 const normText = (s = '') => String(s).toLowerCase().trim().replace(/\s+/g, ' ');
 const questionSignature = q => `${normText(q.question)}||${(q.options || []).map(normText).join('|')}`;
-const allQuestions = (courseData = data, courseId = state.courseId) => courseData.exams.flatMap(exam => exam.questions.map(q => ({...q, examId: exam.id, courseId})));
+const allQuestions = (courseData = data, courseId = state.courseId) => courseData.exams.flatMap(exam => exam.questions.map(q => ({ ...q, examId: exam.id, courseId })));
 const mixedQuestions = (courseData = data, courseId = state.courseId) => {
   const all = allQuestions(courseData, courseId);
   if (courseId !== 'prm393') return all;
@@ -48,9 +48,9 @@ const isMulti = q => Array.isArray(q.correctAnswers) && q.correctAnswers.length 
 const knownQuestion = q => Number.isInteger(q.correctAnswer) || isMulti(q) || (q.variant && Number.isInteger(q.variant.correctAnswer));
 const selectedIndexes = answer => Array.isArray(answer) ? answer : (Number.isInteger(answer) ? [answer] : []);
 const isCorrectAnswer = (q, answer) => {
-  const selected = selectedIndexes(answer).slice().sort((a,b)=>a-b);
-  const correct = (isMulti(q) ? q.correctAnswers : [q.correctAnswer]).slice().sort((a,b)=>a-b);
-  return selected.length === correct.length && selected.every((value,index) => value === correct[index]);
+  const selected = selectedIndexes(answer).slice().sort((a, b) => a - b);
+  const correct = (isMulti(q) ? q.correctAnswers : [q.correctAnswer]).slice().sort((a, b) => a - b);
+  return selected.length === correct.length && selected.every((value, index) => value === correct[index]);
 };
 
 const normalizeAnswer = (q, ans) => {
@@ -98,12 +98,13 @@ function header(showCourseSwitch = false) {
 
 function renderCourseSelection() {
   state.screen = 'courses'; state.courseId = null; data = null; state.session = null;
+  SidebarComponent.unmount();
   app.innerHTML = `${header()}<main class="page course-page">
     <section class="hero course-hero"><div><p class="eyebrow">Chọn học phần</p><h1>Bạn muốn ôn môn nào?</h1><p class="hero-copy">Mỗi học phần có kho câu hỏi, kết quả và tiến độ được lưu riêng trên thiết bị này.</p></div></section>
     <section class="course-grid">${Object.values(courses).map(course => {
-      const total=course.exams.reduce((sum,e)=>sum+e.questions.length,0);
-      return `<button class="course-card" data-action="select-course" data-course="${course.course.id}"><span class="course-code">${esc(course.course.title)}</span><strong>${course.exams.length} đề ôn tập</strong><span>${total} câu hỏi</span><i>Vào học phần →</i></button>`;
-    }).join('')}</section>
+    const total = course.exams.reduce((sum, e) => sum + e.questions.length, 0);
+    return `<button class="course-card" data-action="select-course" data-course="${course.course.id}"><span class="course-code">${esc(course.course.title)}</span><strong>${course.exams.length} đề ôn tập</strong><span>${total} câu hỏi</span><i>Vào học phần →</i></button>`;
+  }).join('')}</section>
   </main>`;
 }
 
@@ -112,12 +113,13 @@ function renderHome(courseId = state.courseId) {
   data = courses[courseId];
   state.screen = 'home';
   state.session = null;
+  SidebarComponent.unmount();
   const attempts = read(STORAGE.attempts, {});
   const sessions = read(STORAGE.sessions, {});
   const total = allQuestions().length;
   const mixedList = mixedQuestions();
-  const cards = [...data.exams.map(exam => ({...exam, mixed:false})), {
-    id:'mixed', title:'Luyện tập tổng hợp', questions:mixedList, mixed:true
+  const cards = [...data.exams.map(exam => ({ ...exam, mixed: false })), {
+    id: 'mixed', title: 'Luyện tập tổng hợp', questions: mixedList, mixed: true
   }];
   app.innerHTML = `${header(true)}<main class="page">
     <section class="hero">
@@ -126,11 +128,11 @@ function renderHome(courseId = state.courseId) {
     </section>
     <section class="exam-grid" aria-label="Danh sách đề thi">
       ${cards.map(card => {
-        const attempt = attempts[keyFor(card.id)];
-        const saved = sessions[keyFor(card.id)];
-        const done = saved?.questions ? saved.questions.filter(q => isQuestionAnswered(q, saved.answers?.[q.id])).length : (saved ? Object.keys(saved.answers || {}).length : 0);
-        const targetTotal = card.mixed && saved?.questionOrder?.length > card.questions.length ? card.questions.length : (saved?.questionOrder?.length || card.questions.length);
-        return `<article class="exam-card ${card.mixed ? 'mixed':''}">
+    const attempt = attempts[keyFor(card.id)];
+    const saved = sessions[keyFor(card.id)];
+    const done = saved?.questions ? saved.questions.filter(q => isQuestionAnswered(q, saved.answers?.[q.id])).length : (saved ? Object.keys(saved.answers || {}).length : 0);
+    const targetTotal = card.mixed && saved?.questionOrder?.length > card.questions.length ? card.questions.length : (saved?.questionOrder?.length || card.questions.length);
+    return `<article class="exam-card ${card.mixed ? 'mixed' : ''}">
           <div class="card-icon">${card.mixed ? '✦' : '▤'}</div>
           <h2>${esc(card.title)}</h2><div class="count">${card.questions.length} câu hỏi${card.mixed && mixedList.length !== total ? ' (đã lọc trùng)' : ''}</div>
           <div class="card-metrics">
@@ -142,13 +144,13 @@ function renderHome(courseId = state.courseId) {
             <button class="btn btn-ghost" data-action="restart" data-exam="${card.id}" title="Làm lại">↻</button>
           </div>
         </article>`;
-      }).join('')}
+  }).join('')}
     </section>
   </main>`;
 }
 
 function configModal(examId, forceNew = false) {
-  const exam = examId === 'mixed' ? {id:'mixed',title:'Luyện tập tổng hợp',questions:mixedQuestions()} : data.exams.find(x => String(x.id) === String(examId));
+  const exam = examId === 'mixed' ? { id: 'mixed', title: 'Luyện tập tổng hợp', questions: mixedQuestions() } : data.exams.find(x => String(x.id) === String(examId));
   state.configExam = exam;
   const saved = read(STORAGE.sessions, {})[keyFor(exam.id)];
   if (saved && !forceNew) {
@@ -198,7 +200,7 @@ function configModal(examId, forceNew = false) {
         <button class="choice-tile" data-mode="exam"><strong>⏱ Thi thử</strong><span>Chấm điểm sau khi nộp bài</span></button>
       </div>
       ${exam.id === 'mixed' ? `<div class="field"><label for="question-count">Số câu trong lượt</label><select id="question-count">
-        ${[exam.questions.length,10,20,30,50,100].filter((n,i,a)=>n<=exam.questions.length&&a.indexOf(n)===i).map(n => `<option value="${n}">${n === exam.questions.length ? `Toàn bộ ${exam.questions.length} câu (theo thứ tự)` : `${n} câu ngẫu nhiên`}</option>`).join('')}
+        ${[exam.questions.length, 10, 20, 30, 50, 100].filter((n, i, a) => n <= exam.questions.length && a.indexOf(n) === i).map(n => `<option value="${n}">${n === exam.questions.length ? `Toàn bộ ${exam.questions.length} câu (theo thứ tự)` : `${n} câu ngẫu nhiên`}</option>`).join('')}
         <option value="wrong" ${wrongCount ? '' : 'disabled'}>Chỉ câu từng làm sai (${wrongCount})</option>
       </select></div>` : ''}
       <div class="switch-row"><div><strong>Trộn thứ tự câu hỏi</strong><small>Mỗi lượt có thứ tự khác nhau</small></div><label class="switch"><input id="shuffle-questions" type="checkbox"><span class="slider"></span></label></div>
@@ -225,35 +227,35 @@ function createSession() {
   }
   if (shuffleQuestions) questions = shuffle(questions);
   const prepared = questions.map(q => {
-    const optionEntries = q.options.map((text, originalIndex) => ({text, originalIndex}));
+    const optionEntries = q.options.map((text, originalIndex) => ({ text, originalIndex }));
     const arranged = shuffleOptions ? shuffle(optionEntries) : optionEntries;
     let variantPrepared = null;
     if (q.variant) {
-      const vEntries = q.variant.options.map((text, originalIndex) => ({text, originalIndex}));
+      const vEntries = q.variant.options.map((text, originalIndex) => ({ text, originalIndex }));
       const vArranged = shuffleOptions ? shuffle(vEntries) : vEntries;
       variantPrepared = {
         title: q.variant.title || 'Kiểu hỏi khác',
         question: q.variant.question,
         options: vArranged.map(x => x.text),
         correctAnswer: Number.isInteger(q.variant.correctAnswer) ? vArranged.findIndex(x => x.originalIndex === q.variant.correctAnswer) : null,
-        correctAnswers: Array.isArray(q.variant.correctAnswers) ? q.variant.correctAnswers.map(ans => vArranged.findIndex(x => x.originalIndex === ans)).sort((a,b)=>a-b) : null,
+        correctAnswers: Array.isArray(q.variant.correctAnswers) ? q.variant.correctAnswers.map(ans => vArranged.findIndex(x => x.originalIndex === ans)).sort((a, b) => a - b) : null,
         explanation: q.variant.explanation || null
       };
     }
     return {
-      id:q.id, duplicateIds:q.duplicateIds || [q.id], examId:q.examId || Math.ceil(q.id / 60), courseId:state.courseId, question:q.question,
-      options:arranged.map(x => x.text),
-      correctAnswer:Number.isInteger(q.correctAnswer) ? arranged.findIndex(x => x.originalIndex === q.correctAnswer) : null,
-      correctAnswers:Array.isArray(q.correctAnswers) ? q.correctAnswers.map(answer => arranged.findIndex(x => x.originalIndex === answer)).sort((a,b)=>a-b) : null,
-      variant:variantPrepared,
-      explanation:q.explanation || null, needsReview:q.needsReview
+      id: q.id, duplicateIds: q.duplicateIds || [q.id], examId: q.examId || Math.ceil(q.id / 60), courseId: state.courseId, question: q.question,
+      options: arranged.map(x => x.text),
+      correctAnswer: Number.isInteger(q.correctAnswer) ? arranged.findIndex(x => x.originalIndex === q.correctAnswer) : null,
+      correctAnswers: Array.isArray(q.correctAnswers) ? q.correctAnswers.map(answer => arranged.findIndex(x => x.originalIndex === answer)).sort((a, b) => a - b) : null,
+      variant: variantPrepared,
+      explanation: q.explanation || null, needsReview: q.needsReview
     };
   });
   state.session = {
-    id:`${Date.now()}-${Math.random().toString(16).slice(2)}`,
-    examId:exam.id, courseId:state.courseId, title:exam.title, mode:state.configMode, questions:prepared,
-    questionOrder:prepared.map(q => q.id), answers:{}, flags:{}, revealed:{}, current:0,
-    shuffleQuestions, submitted:false, createdAt:Date.now(), updatedAt:Date.now()
+    id: `${Date.now()}-${Math.random().toString(16).slice(2)}`,
+    examId: exam.id, courseId: state.courseId, title: exam.title, mode: state.configMode, questions: prepared,
+    questionOrder: prepared.map(q => q.id), answers: {}, flags: {}, revealed: {}, current: 0,
+    shuffleQuestions, submitted: false, createdAt: Date.now(), updatedAt: Date.now()
   };
   saveSession();
   renderQuiz();
@@ -261,96 +263,36 @@ function createSession() {
 
 function saveSession() {
   if (!state.session) return;
+  const sb = window.SidebarComponent?.el;
+  if (sb && !sb.classList.contains('hidden')) {
+    state.session.sidebarScroll = sb.scrollTop;
+  }
   state.session.updatedAt = Date.now();
   const sessions = read(STORAGE.sessions, {});
   sessions[keyFor(state.session.examId)] = state.session;
   write(STORAGE.sessions, sessions);
 }
 
+function switchQuestion(nextIndex) {
+  const s = state.session;
+  if (!s || nextIndex < 0 || nextIndex >= s.questions.length || nextIndex === s.current) return;
+  const prevIndex = s.current;
+  s.current = nextIndex;
+  window.SidebarComponent.setActiveQuestion(prevIndex, nextIndex);
+  window.QuestionComponent.render(s);
+  saveSession();
+}
+
 function renderQuiz() {
   state.screen = 'quiz';
-  const s = state.session;
-  const q = s.questions[s.current];
-  const answeredCount = s.questions.filter(item => isQuestionAnswered(item, s.answers[item.id])).length;
-  const rawAns = s.answers[q.id];
-  const normAns = q.variant ? normalizeAnswer(q, rawAns) : null;
-  const mainChosen = q.variant ? (normAns.main !== undefined ? [normAns.main] : []) : selectedIndexes(rawAns);
-  const varChosen = q.variant ? (normAns.variant !== undefined ? [normAns.variant] : []) : [];
-  const reveal = s.submitted || (s.mode === 'study' && s.revealed?.[q.id]);
-
-  const resultClass = (index, targetCorrect, chosenArr) => {
-    if (!reveal) return chosenArr.includes(index) ? 'selected' : '';
-    const correctArr = Array.isArray(targetCorrect) ? targetCorrect : (Number.isInteger(targetCorrect) ? [targetCorrect] : []);
-    if (correctArr.includes(index)) return 'correct';
-    if (chosenArr.includes(index) && !correctArr.includes(index)) return 'wrong';
-    return chosenArr.includes(index) ? 'selected' : '';
-  };
-
-  const isLast = s.current === s.questions.length - 1;
-  const canCheckStudy = q.variant ? (normAns.main !== undefined) : (mainChosen.length > 0);
-
-  app.innerHTML = `<div class="quiz-shell">
-    <aside class="sidebar" id="sidebar">
-      <div class="side-head"><div><div class="side-title">${esc(s.title)}</div><div class="side-meta">${s.questions.length} câu · ${s.mode === 'study' ? 'Ôn tập' : 'Thi thử'}</div></div><button class="icon-btn mobile-menu" data-action="menu">×</button></div>
-      <div class="legend"><span><i class="answered"></i>Đã trả lời</span><span><i class="partial"></i>Làm dở</span><span><i></i>Chưa làm</span><span><i class="flagged"></i>Xem lại</span></div>
-      <div class="question-grid">${s.questions.map((item,i) => {
-        const isAns = isQuestionAnswered(item, s.answers[item.id]);
-        const isPart = isQuestionPartiallyAnswered(item, s.answers[item.id]);
-        return `<button class="q-num ${isAns ? 'answered':''} ${isPart ? 'partial':''} ${s.flags[item.id] ? 'flagged':''} ${i === s.current ? 'current':''}" data-go="${i}" aria-label="Câu ${i+1}">${i+1}</button>`;
-      }).join('')}</div>
-    </aside>
-    <main class="quiz-main">
-      <header class="quiz-top">
-        <div class="quiz-top-left"><button class="icon-btn mobile-menu" data-action="menu">☰</button><button class="icon-btn" data-action="home" title="Về trang chủ">←</button><span class="mode-pill">${s.mode === 'study' ? 'Ôn tập' : 'Thi thử'}</span></div>
-        <div class="progress-wrap"><div class="progress-label"><span>Tiến độ</span><strong>${answeredCount}/${s.questions.length}</strong></div><div class="progress"><div style="width:${answeredCount/s.questions.length*100}%"></div></div></div>
-        <button class="btn btn-primary" data-action="submit">Nộp bài</button>
-      </header>
-      <div class="question-stage"><article class="question-card">
-        <div class="question-kicker"><span>Câu ${s.current+1} / ${s.questions.length}</span><button class="flag-btn ${s.flags[q.id] ? 'active':''}" data-action="flag">${s.flags[q.id] ? '★ Đã đánh dấu' : '☆ Đánh dấu xem lại'}</button></div>
-        
-        ${q.variant ? `<div class="question-part-badge"><span class="badge-part">Phần 1: Câu hỏi chính</span></div>` : ''}
-        <h1 class="question-text">${esc(q.question)}</h1>
-        ${isMulti(q) ? `<div class="multi-hint">▣ Câu hỏi nhiều đáp án · Chọn ${q.correctAnswers.length} phương án</div>` : ''}
-        
-        <div class="options">${q.options.map((option,index) => `<button class="option ${resultClass(index, isMulti(q) ? q.correctAnswers : q.correctAnswer, mainChosen)}" data-answer="${index}" ${s.submitted || reveal ? 'disabled':''}><span class="option-letter">${String.fromCharCode(65+index)}</span><span>${esc(option)}</span></button>`).join('')}</div>
-        
-        ${q.variant && normAns.main === undefined ? `
-          <div class="variant-prompt-card">
-            <div class="variant-prompt-icon">💡</div>
-            <div class="variant-prompt-content">
-              <strong>Câu này có thêm 1 kiểu hỏi khác</strong>
-              <p>Hãy chọn câu trả lời ở trên để hiển thị tiếp kiểu hỏi khác bên dưới.</p>
-            </div>
-          </div>
-        ` : ''}
-
-        ${q.variant && normAns.main !== undefined ? `
-          <section class="variant-card">
-            <div class="variant-card-header">
-              <div class="variant-part-tag">
-                <span class="badge-part variant-accent">Phần 2: ${esc(q.variant.title || 'Kiểu hỏi khác')}</span>
-                <span class="variant-indicator">${normAns.variant !== undefined ? '✓ Đã chọn đáp án' : '👉 Hãy chọn đáp án cho kiểu hỏi này'}</span>
-              </div>
-            </div>
-            <h2 class="variant-question-title">${esc(q.variant.question)}</h2>
-            <div class="options">
-              ${q.variant.options.map((opt, vIdx) => `<button class="option ${resultClass(vIdx, q.variant.correctAnswer, varChosen)}" data-variant-answer="${vIdx}" ${s.submitted || reveal ? 'disabled':''}><span class="option-letter">${String.fromCharCode(65+vIdx)}</span><span>${esc(opt)}</span></button>`).join('')}
-            </div>
-          </section>
-        ` : ''}
-
-        ${s.mode === 'study' && !reveal ? `<button class="btn btn-primary check-answer" data-action="check-answer" ${canCheckStudy ? '' : 'disabled'}>Kiểm tra đáp án ${q.variant && normAns.variant === undefined ? '(Nên làm cả 2 phần)' : ''}</button>` : ''}
-        ${feedback(q, rawAns, reveal)}
-      </article></div>
-      <nav class="quiz-nav"><button class="btn btn-ghost" data-action="prev" ${s.current===0?'disabled':''}>← Câu trước</button><button class="btn btn-primary" data-action="next">${isLast ? 'Nộp bài' : 'Câu tiếp theo →'}</button></nav>
-    </main>
-  </div>`;
+  window.SidebarComponent.mount(state.session);
+  window.QuestionComponent.render(state.session);
 }
 
 function feedback(q, rawAns, reveal) {
   if (!reveal) return '';
   const explanation = q.explanation ? `<div class="explanation"><strong>Giải thích từ tài liệu:</strong><br>${esc(q.explanation)}</div>` : '';
-  
+
   if (q.variant) {
     const norm = normalizeAnswer(q, rawAns);
     const isMainGood = norm.main === q.correctAnswer;
@@ -373,7 +315,7 @@ function feedback(q, rawAns, reveal) {
   if (!knownQuestion(q)) return `<div class="feedback review"><strong>Câu này cần rà soát.</strong> Tài liệu không đánh dấu đáp án nên hệ thống không tự suy đoán và không chấm câu này.${explanation}</div>`;
   const selected = selectedIndexes(rawAns);
   const correctIndexes = isMulti(q) ? q.correctAnswers : [q.correctAnswer];
-  const correctText = correctIndexes.map(index => `${String.fromCharCode(65+index)}. ${esc(q.options[index])}`).join('<br>');
+  const correctText = correctIndexes.map(index => `${String.fromCharCode(65 + index)}. ${esc(q.options[index])}`).join('<br>');
   if (isCorrectAnswer(q, selected)) return `<div class="feedback good"><strong>Chính xác!</strong> Bạn đã chọn đúng.${explanation}</div>`;
   return `<div class="feedback bad"><strong>Chưa đúng.</strong><br>Đáp án đúng:<br>${correctText}${explanation}</div>`;
 }
@@ -386,7 +328,7 @@ function answerQuestion(index, isVariant = false) {
   if (!q.variant) {
     if (isMulti(q)) {
       const current = selectedIndexes(s.answers[q.id]);
-      s.answers[q.id] = current.includes(index) ? current.filter(x => x !== index) : [...current, index].sort((a,b)=>a-b);
+      s.answers[q.id] = current.includes(index) ? current.filter(x => x !== index) : [...current, index].sort((a, b) => a - b);
       if (!s.answers[q.id].length) delete s.answers[q.id];
     } else {
       s.answers[q.id] = index;
@@ -401,7 +343,8 @@ function answerQuestion(index, isVariant = false) {
     s.answers[q.id] = current;
   }
   saveSession();
-  renderQuiz();
+  SidebarComponent.updateQuestionStatus(s.current, s);
+  QuestionComponent.render(s);
 }
 
 function calculateResult(s) {
@@ -462,23 +405,24 @@ function submitQuiz() {
 
 function renderResult() {
   state.screen = 'result';
+  SidebarComponent.unmount();
   const s = state.session;
   const r = s.result || calculateResult(s);
   app.innerHTML = `${header()}<main class="result-page">
-    <section class="result-hero"><p class="eyebrow" style="color:#dce9ff">Kết quả · ${esc(s.title)}</p><h1>${r.score>=8?'Xuất sắc!':r.score>=5?'Bạn đã hoàn thành!':'Tiếp tục cố gắng nhé!'}</h1><div class="score-ring" style="--score:${r.score*10}%"><strong>${r.score.toFixed(1)}</strong></div><p>Điểm theo thang 10 · ${r.review ? `${r.review} câu không chấm do cần rà soát` : 'Tất cả câu đã được chấm'}</p></section>
+    <section class="result-hero"><p class="eyebrow" style="color:#dce9ff">Kết quả · ${esc(s.title)}</p><h1>${r.score >= 8 ? 'Xuất sắc!' : r.score >= 5 ? 'Bạn đã hoàn thành!' : 'Tiếp tục cố gắng nhé!'}</h1><div class="score-ring" style="--score:${r.score * 10}%"><strong>${r.score.toFixed(1)}</strong></div><p>Điểm theo thang 10 · ${r.review ? `${r.review} câu không chấm do cần rà soát` : 'Tất cả câu đã được chấm'}</p></section>
     <section class="result-stats"><div class="stat-card"><strong style="color:var(--green)">${r.correct}</strong><span>Câu đúng</span></div><div class="stat-card"><strong style="color:var(--red)">${r.wrong}</strong><span>Câu sai</span></div><div class="stat-card"><strong>${r.blank}</strong><span>Bỏ trống</span></div><div class="stat-card"><strong>${r.accuracy.toFixed(0)}%</strong><span>Chính xác</span></div></section>
-    <div class="result-actions"><button class="btn btn-ghost" data-action="home">Về trang chủ</button><button class="btn btn-ghost" data-action="review-result">Xem lại toàn bộ bài</button><button class="btn btn-primary" data-action="redo">Làm lại đề</button>${r.wrong ? '<button class="btn btn-ghost" data-action="review-wrong">Xem lại câu sai</button><button class="btn btn-danger" data-action="practice-wrong">Làm lại câu sai</button>':''}</div>
+    <div class="result-actions"><button class="btn btn-ghost" data-action="home">Về trang chủ</button><button class="btn btn-ghost" data-action="review-result">Xem lại toàn bộ bài</button><button class="btn btn-primary" data-action="redo">Làm lại đề</button>${r.wrong ? '<button class="btn btn-ghost" data-action="review-wrong">Xem lại câu sai</button><button class="btn btn-danger" data-action="practice-wrong">Làm lại câu sai</button>' : ''}</div>
     <section class="wrong-list"><h2>Các câu trả lời sai</h2>${r.wrongItems.length ? r.wrongItems.map(item => {
-      const q = item.q;
-      if (q.variant) {
-        const norm = normalizeAnswer(q, item.answer);
-        const isMainGood = norm.main === q.correctAnswer;
-        const isVarGood = norm.variant === q.variant.correctAnswer;
-        const mainChosen = norm.main !== undefined ? `${String.fromCharCode(65 + norm.main)}. ${esc(q.options[norm.main])}` : 'Chưa chọn';
-        const mainCorrect = `${String.fromCharCode(65 + q.correctAnswer)}. ${esc(q.options[q.correctAnswer])}`;
-        const varChosen = norm.variant !== undefined ? `${String.fromCharCode(65 + norm.variant)}. ${esc(q.variant.options[norm.variant])}` : 'Chưa chọn';
-        const varCorrect = `${String.fromCharCode(65 + q.variant.correctAnswer)}. ${esc(q.variant.options[q.variant.correctAnswer])}`;
-        return `<article class="wrong-item">
+    const q = item.q;
+    if (q.variant) {
+      const norm = normalizeAnswer(q, item.answer);
+      const isMainGood = norm.main === q.correctAnswer;
+      const isVarGood = norm.variant === q.variant.correctAnswer;
+      const mainChosen = norm.main !== undefined ? `${String.fromCharCode(65 + norm.main)}. ${esc(q.options[norm.main])}` : 'Chưa chọn';
+      const mainCorrect = `${String.fromCharCode(65 + q.correctAnswer)}. ${esc(q.options[q.correctAnswer])}`;
+      const varChosen = norm.variant !== undefined ? `${String.fromCharCode(65 + norm.variant)}. ${esc(q.variant.options[norm.variant])}` : 'Chưa chọn';
+      const varCorrect = `${String.fromCharCode(65 + q.variant.correctAnswer)}. ${esc(q.variant.options[q.variant.correctAnswer])}`;
+      return `<article class="wrong-item">
           <p><strong>Câu ${item.index + 1}</strong> (Gồm câu hỏi chính & kiểu hỏi khác)</p>
           <div style="margin:8px 0 6px 12px; padding-left:10px; border-left:3px solid ${isMainGood ? 'var(--green)' : 'var(--red)'}">
             <small><strong>Phần 1:</strong> ${esc(q.question)}</small>
@@ -492,22 +436,22 @@ function renderResult() {
           </div>
           ${q.explanation ? `<div class="result-explanation"><strong>Giải thích:</strong> ${esc(q.explanation)}</div>` : ''}
         </article>`;
-      }
-      const picked = selectedIndexes(item.answer).map(i => `${String.fromCharCode(65 + i)}. ${esc(q.options[i])}`).join('; ');
-      const correct = (isMulti(q) ? q.correctAnswers : [q.correctAnswer]).map(i => `${String.fromCharCode(65 + i)}. ${esc(q.options[i])}`).join('; ');
-      return `<article class="wrong-item">
+    }
+    const picked = selectedIndexes(item.answer).map(i => `${String.fromCharCode(65 + i)}. ${esc(q.options[i])}`).join('; ');
+    const correct = (isMulti(q) ? q.correctAnswers : [q.correctAnswer]).map(i => `${String.fromCharCode(65 + i)}. ${esc(q.options[i])}`).join('; ');
+    return `<article class="wrong-item">
         <p>Câu ${item.index + 1}. ${esc(q.question)}</p>
         <small>Bạn chọn: ${picked || 'Chưa chọn'}</small>
         <small>Đáp án đúng: ${correct}</small>
         ${q.explanation ? `<div class="result-explanation"><strong>Giải thích từ tài liệu:</strong> ${esc(q.explanation)}</div>` : ''}
       </article>`;
-    }).join('') : '<div class="empty-state">Không có câu trả lời sai. Tuyệt vời!</div>'}</section>
+  }).join('') : '<div class="empty-state">Không có câu trả lời sai. Tuyệt vời!</div>'}</section>
   </main>`;
 }
 
 function practiceWrong() {
   const wrongQuestions = state.session.result.wrongItems.map(x => x.q);
-  state.session = { id:`wrong-${Date.now()}`, examId:'wrong-practice', title:'Làm lại câu sai', mode:'study', questions:wrongQuestions, questionOrder:wrongQuestions.map(q => q.id), answers:{}, flags:{}, revealed:{}, current:0, submitted:false, createdAt:Date.now() };
+  state.session = { id: `wrong-${Date.now()}`, examId: 'wrong-practice', title: 'Làm lại câu sai', mode: 'study', questions: wrongQuestions, questionOrder: wrongQuestions.map(q => q.id), answers: {}, flags: {}, revealed: {}, current: 0, submitted: false, createdAt: Date.now() };
   saveSession();
   renderQuiz();
 }
@@ -519,9 +463,9 @@ function reviewWrong() {
   const answers = {};
   items.forEach(item => { answers[item.q.id] = item.answer; });
   state.session = {
-    id:`review-wrong-${Date.now()}`, examId:'wrong-review', title:'Xem lại câu sai', mode:'study',
-    questions:wrongQuestions, questionOrder:wrongQuestions.map(q => q.id), answers, flags:{}, revealed:{},
-    current:0, submitted:true, createdAt:Date.now(), result:calculateResult({questions:wrongQuestions, answers})
+    id: `review-wrong-${Date.now()}`, examId: 'wrong-review', title: 'Xem lại câu sai', mode: 'study',
+    questions: wrongQuestions, questionOrder: wrongQuestions.map(q => q.id), answers, flags: {}, revealed: {},
+    current: 0, submitted: true, createdAt: Date.now(), result: calculateResult({ questions: wrongQuestions, answers })
   };
   renderQuiz();
 }
@@ -549,16 +493,10 @@ app.addEventListener('click', event => {
     answerQuestion(Number(button.dataset.variantAnswer), true);
     return;
   }
-  if (button.dataset.go !== undefined) {
-    state.session.current = Number(button.dataset.go);
-    saveSession();
-    renderQuiz();
-    return;
-  }
   if (action === 'theme') {
     document.body.classList.toggle('dark');
     write(STORAGE.theme, document.body.classList.contains('dark'));
-    state.screen === 'courses' ? renderCourseSelection() : state.screen === 'home' ? renderHome() : state.screen === 'result' ? renderResult() : renderQuiz();
+    state.screen === 'courses' ? renderCourseSelection() : state.screen === 'home' ? renderHome() : state.screen === 'result' ? renderResult() : QuestionComponent.render(state.session);
     return;
   }
   if (action === 'courses') renderCourseSelection();
@@ -568,16 +506,19 @@ app.addEventListener('click', event => {
   if (action === 'close-modal') document.querySelector('[data-modal]')?.remove();
   if (action === 'start') createSession();
   if (action === 'home') { saveSession(); renderHome(); }
-  if (action === 'menu') document.querySelector('#sidebar')?.classList.toggle('open');
+  if (action === 'menu') SidebarComponent.toggleMobileMenu();
   if (action === 'flag') {
-    const q = state.session.questions[state.session.current];
-    state.session.flags[q.id] = !state.session.flags[q.id];
+    const s = state.session;
+    const q = s.questions[s.current];
+    s.flags[q.id] = !s.flags[q.id];
     saveSession();
-    renderQuiz();
+    SidebarComponent.updateQuestionStatus(s.current, s);
+    QuestionComponent.render(s);
   }
   if (action === 'check-answer') {
-    const q = state.session.questions[state.session.current];
-    const raw = state.session.answers[q.id];
+    const s = state.session;
+    const q = s.questions[s.current];
+    const raw = s.answers[q.id];
     if (raw === undefined) return;
     if (q.variant) {
       const n = normalizeAnswer(q, raw);
@@ -585,21 +526,17 @@ app.addEventListener('click', event => {
     } else if (Array.isArray(raw) && !raw.length) {
       return;
     }
-    state.session.revealed ||= {};
-    state.session.revealed[q.id] = true;
+    s.revealed ||= {};
+    s.revealed[q.id] = true;
     saveSession();
-    renderQuiz();
+    QuestionComponent.render(s);
   }
   if (action === 'prev' && state.session.current > 0) {
-    state.session.current--;
-    saveSession();
-    renderQuiz();
+    switchQuestion(state.session.current - 1);
   }
   if (action === 'next') {
     if (state.session.current < state.session.questions.length - 1) {
-      state.session.current++;
-      saveSession();
-      renderQuiz();
+      switchQuestion(state.session.current + 1);
     } else {
       submitQuiz();
     }
@@ -617,6 +554,9 @@ app.addEventListener('click', event => {
 });
 
 async function init() {
+  window.SidebarComponent.init({
+    onSelectQuestion: nextIndex => switchQuestion(nextIndex)
+  });
   document.body.classList.toggle('dark', read(STORAGE.theme, false));
   try {
     const sources = { mln111: 'questions.json', mln122: 'questions-mln122.json', prm393: 'questions-prm393.json' };
@@ -626,7 +566,7 @@ async function init() {
     const payloads = await Promise.all(responses.map(res => res.json()));
     courses = Object.fromEntries(Object.keys(sources).map((id, i) => [id, payloads[i]]));
     renderCourseSelection();
-  } catch(error) {
+  } catch (error) {
     app.innerHTML = `<div class="loading"><h2>Không tải được dữ liệu</h2><p>Hãy chạy website qua web server cục bộ, không mở trực tiếp file HTML.</p><code>python -m http.server 8000</code></div>`;
     console.error(error);
   }
